@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Knock me after</title>
+</head>
+
+<body id="body" onload="initAlarm();">
+    <header>
+        <div align="center">
+            <h1> Knock me out after</h1>
+        </div>
+
+    </header>
+    <main>
+        <div class="griditem"></div>
+        <div class="griditem" id="clockTime">
+            <h4>Set the time here</h4>
+
+            <input type="text" pattern="[0-9]+" placeholder="HH" id="HH" maxlength="2">
+            <input type="text" pattern="[0-9]+" placeholder="MM" id="MM" maxlength="2">
+        </div>
+        <div class="griditem"></div>
+    </main>
+    <footer>
+        <div align="center">
+            <button id="editAlarm" onclick="editAlarm()">Edit</button>
+            <button id="setAlarm" onclick="setAlarm()">Set</button>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
